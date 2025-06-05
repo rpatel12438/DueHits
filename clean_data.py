@@ -11,4 +11,4 @@ df.drop(columns = ['Age', 'Lg', 'WAR', 'G', 'R', '2B', '3B', 'HR', 'RBI', 'SB', 
 # Add "inplace = True" if you don't want to reassign the DataFrame
 # No "inplace = True" you had to reassign the DataFrame to a new named dataframe
 print(df.head())
-
+df.to_csv('cleaned_batters.csv', index=False)
